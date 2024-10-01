@@ -1,0 +1,91 @@
+/* Estilos para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para o link da logo */
+.logo {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    
+}
+
+/* Estilos para o contêiner do formulário de login */
+.container-login {
+    background-color: #faf7f7;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o título do formulário */
+.container-login h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os ícones de mídia social */
+.social-icons {
+    text-align: center;
+}
+
+.social-icons .icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para os campos de entrada e rótulos */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para o botão de envio */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ff0000; /* Vermelho */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #cc0000; /* Vermelho escuro */
+}
+
+/* Estilos para o link "Associe-se aqui" */
+.container-login a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.container-login a:hover {
+    text-decoration: underline;
+}

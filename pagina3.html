@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="pagina3.css">
+    <title>Sócio Esquadrão</title>
+</head>
+<body>
+    <a href="pagina1.html" class="logo">
+        <img src="logo_marca.png" alt="Logo" width="130px">
+        </a>
+
+    <div class="container-login">
+        <h3>Faça o login</h3>
+    
+    <div class="social-icons">
+        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+
+        <label>Email </label>
+        <input type="email"><br>
+        <label>Senha</label>
+        <input type="password"> <br>
+        <button type="submit">Enter</button> <br>
+        <a href="pagina4.html">Associe-se aqui</a>
+    </div>
+
+    
+
+</body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Capturando elementos do DOM
+    const form = document.querySelector('.container-login');
+    const emailInput = form.querySelector('input[type="email"]');
+    const passwordInput = form.querySelector('input[type="password"]');
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    // Função para validar o email
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
+    // Função para validar a senha
+    function validatePassword(password) {
+        // A senha deve ter pelo menos 6 caracteres
+        return password.length >= 6;
+    }
+
+    // Função para validar o formulário
+    function validateForm() {
+        const email = emailInput.value.trim();
+        const password = passwordInput.value.trim();
+
+        if (!validateEmail(email)) {
+            alert('Por favor, insira um email válido.');
+            return false;
+        }
+
+        if (!validatePassword(password)) {
+            alert('A senha deve ter pelo menos 6 caracteres.');
+            return false;
+        }
+
+        return true;
+    }
+
+    // Lidando com o envio do formulário
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita o envio padrão do formulário
+
+        if (validateForm()) {
+            // Aqui você pode adicionar código para enviar os dados para o servidor
+            alert('Formulário enviado com sucesso!');
+            // Você pode redirecionar o usuário ou executar outras ações após o envio do formulário
+        }
+    });
+});
+
+    </script>
+</html>

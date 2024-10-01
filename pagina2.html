@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo_marca.png" type="x-icon">
+    <link rel="stylesheet" href="pagina2.css">
+    <title>Jogadores Do Bahia</title>
+   
+</head>
+<body>
+    <header>
+        <a href="pagina1.html">
+            <img src="logo_marca.png" alt="Logo" width="130px">
+            <a href="#historia"><strong>História do Bahia</strong></a>
+            <a href="#titulos"><strong>Titulos</strong></a>
+            <a href="pagina2.html"><strong>Jogadores</strong></a>
+            <a href="pagina3.html" target="_blank" ><strong>Seja Sócio Esquadrão</strong></a>
+        </a>
+
+    </header>
+    
+    <section id="jogadores">
+        <h1>Conheça os jogadores</h1>
+        <div class="goleiros">
+            <img src="danilo_fernandes-1-215x230.png" alt="Foto de Danilo Fernandes" onclick="mostrarInformacoes('danilo_fernandes')">
+            <img src="marcos_felipe-215x230.png" alt="Foto de Marcos Felipe" onclick="mostrarInformacoes('marcos_felipe')">
+            <img src="adriel-215x230.png" alt="Foto de Adriel" onclick="mostrarInformacoes('adriel')">
+        </div>
+        <div class="zagueiros">
+            <img src="victor_cuesta-215x230.png" alt="Foto de Cuesta" onclick="mostrarInformacoes('victor_cuesta')">
+            <img src="gabriel_xavier-215x230.png" alt="Foto de Gabriel" onclick="mostrarInformacoes('gabriel_xavier')">
+            <img src="kanu-215x230.png" alt="Foto de Kanu" onclick="mostrarInformacoes('kanu')">
+            <img src="marcos_victor-215x230.png" alt="Foto de Marcos Victor" onclick="mostrarInformacoes('marcos_victor')">
+            <img src="david_duarte-215x230.png" alt="Foto de David Duarte" onclick="mostrarInformacoes('david_duarte')">
+        </div>
+        <div class="laterais">
+            <img src="santi_arias-215x230.png" alt="Foto de Arias" onclick="mostrarInformacoes('santi_arias')">
+            <img src="cicinho-3-215x230.png" alt="Foto de Cicinho" onclick="mostrarInformacoes('cicinho')">
+            <img src="luciano_juba-215x230.png" alt="Foto de Luciano" onclick="mostrarInformacoes('luciano_juba')">
+            <img src="ryan-2-215x230.png" alt="Foto de Ryan" onclick="mostrarInformacoes('ryan')">
+            <img src="gilberto-215x230.png" alt="Foto de Gilberto" onclick="mostrarInformacoes('gilberto')">
+        </div>
+        <div class="meio-campo">
+            <img src="thaciano-1-215x230.png" alt="Foto de Thaciano" onclick="mostrarInformacoes('thaciano')">
+            <img src="cauly-215x230.png" alt="Foto de Cauly" onclick="mostrarInformacoes('cauly')">
+            <img src="everton_ribeiro-215x230.png" alt="Foto de Everton Ribeiro" onclick="mostrarInformacoes('everton_ribeiro')">
+            <img src="caio_alexandre-215x230.png" alt="Foto de Caio Alexandre" onclick="mostrarInformacoes('caio_alexandre')">
+            <img src="jean_lucas-215x230.png" alt="Foto de Jean Lucas" onclick="mostrarInformacoes('jean_lucas')">
+            <img src="de_pena-215x230.png" alt="Foto de De Pena" onclick="mostrarInformacoes('de_pena')">
+            <img src="acevedo-1-215x230.png" alt="Foto de Acevedo" onclick="mostrarInformacoes('acevedo')">
+            <img src="rezende-3-215x230.png" alt="Foto de Rezende" onclick="mostrarInformacoes('rezende')">
+            <img src="yago_-215x230.png" alt="Foto de Yago" onclick="mostrarInformacoes('yago')">
+        </div>
+        <div class="ataque">
+            <img src="ademir-215x230.png" alt="Foto de Ademir" onclick="mostrarInformacoes('ademir')">
+            <img src="biel-2-215x230.png" alt="Foto de Biel" onclick="mostrarInformacoes('biel')">
+            <img src="ratao-215x230.png" alt="Foto de Rafael" onclick="mostrarInformacoes('ratao')">
+            <img src="oscar-215x230.png" alt="Foto de Oscar" onclick="mostrarInformacoes('oscar')">
+            <img src="everaldo-215x230.png" alt="Foto de Everaldo" onclick="mostrarInformacoes('everaldo')">
+        </div> 
+    </section>
+
+   
+    <div id="overlay" onclick="fecharInformacoes()"></div>
+    <div id="info-jogador">
+        <h2>Informações do Jogador</h2>
+        <img id="info-img" src="" alt="Foto do Jogador">
+        <p id="info-nome"></p>
+        <p id="info-detalhes"></p>
+        <button onclick="fecharInformacoes()">Fechar</button>
+    </div>
+
+    <footer>
+        <div>
+            <a href="pagina1.html">
+                <img src="logo_marca.png" alt="Logo" width="100px">
+            </a>
+        </div>
+
+        <div class="info">
+            <strong>Encontre-nos:</strong>
+            <p>Whatsapp: <a href="https://wa.me/55998765432"> (71) 99688-5113</a></p>
+            <p>Email: <a href="mailto:esquadrao@hotmail.com">esquadrao.bahia@hotmail.com</p></a>
+            <p>Endereço: Av. 2 de Janeiro, nº 76</p>
+        </div>
+
+        Esporte Clube Bahia
+    </footer>
+
+    
+    <script>
+        const jogadores = {
+            "danilo_fernandes": {
+                nome: "Danilo Fernandes",
+                detalhes: "Goleiro reserva do Bahia, estreou em 2021.",
+                imagem: "danilo_fernandes-1-215x230.png"
+            },
+            "marcos_felipe": {
+                nome: "Marcos Felipe",
+                detalhes: "Goleiro titular do Bahia, estreou em 2022.",
+                imagem: "marcos_felipe-215x230.png"
+            },
+            
+            "adriel": {
+                nome: "Adriel",
+                detalhes: "Detalhes sobre Adriel.",
+                imagem: "adriel-215x230.png"
+            },
+            "victor_cuesta": {
+                nome: "Victor Cuesta",
+                detalhes: "Detalhes sobre Victor Cuesta.",
+                imagem: "victor_cuesta-215x230.png"
+            },
+            "gabriel_xavier": {
+                nome: "Gabriel Xavier",
+                detalhes: "Detalhes sobre Gabriel Xavier.",
+                imagem: "gabriel_xavier-215x230.png"
+            },
+            "kanu": {
+                nome: "Kanu",
+                detalhes: "Detalhes sobre Kanu.",
+                imagem: "kanu-215x230.png"
+            },
+            "marcos_victor": {
+                nome: "Marcos Victor",
+                detalhes: "Detalhes sobre Marcos Victor.",
+                imagem: "marcos_victor-215x230.png"
+            },
+            "david_duarte": {
+                nome: "David Duarte",
+                detalhes: "Detalhes sobre David Duarte.",
+                imagem: "david_duarte-215x230.png"
+            },
+            "santi_arias": {
+                nome: "Santi Arias",
+                detalhes: "Detalhes sobre Santi Arias.",
+                imagem: "santi_arias-215x230.png"
+            },
+            "cicinho": {
+                nome: "Cicinho",
+                detalhes: "Detalhes sobre Cicinho.",
+                imagem: "cicinho-3-215x230.png"
+            },
+            "luciano_juba": {
+                nome: "Luciano Juba",
+                detalhes: "Detalhes sobre Luciano Juba.",
+                imagem: "luciano_juba-215x230.png"
+            },
+            "ryan": {
+                nome: "Ryan",
+                detalhes: "Detalhes sobre Ryan.",
+                imagem: "ryan-2-215x230.png"
+            },
+            "gilberto": {
+                nome: "Gilberto",
+                detalhes: "Detalhes sobre Gilberto.",
+                imagem: "gilberto-215x230.png"
+            },
+            "thaciano": {
+                nome: "Thaciano",
+                detalhes: "Detalhes sobre Thaciano.",
+                imagem: "thaciano-1-215x230.png"
+            },
+            "cauly": {
+                nome: "Cauly",
+                detalhes: "Detalhes sobre Cauly.",
+                imagem: "cauly-215x230.png"
+            },
+            "everton_ribeiro": {
+                nome: "Everton Ribeiro",
+                detalhes: "Detalhes sobre Everton Ribeiro.",
+                imagem: "everton_ribeiro-215x230.png"
+            },
+            "caio_alexandre": {
+                nome: "Caio Alexandre",
+                detalhes: "Detalhes sobre Caio Alexandre.",
+                imagem: "caio_alexandre-215x230.png"
+            },
+            "jean_lucas": {
+                nome: "Jean Lucas",
+                detalhes: "Detalhes sobre Jean Lucas.",
+                imagem: "jean_lucas-215x230.png"
+            },
+            "de_pena": {
+                nome: "De Pena",
+                detalhes: "Detalhes sobre De Pena.",
+                imagem: "de_pena-215x230.png"
+            },
+            "acevedo": {
+                nome: "Acevedo",
+                detalhes: "Detalhes sobre Acevedo.",
+                imagem: "acevedo-1-215x230.png"
+            },
+            "rezende": {
+                nome: "Rezende",
+                detalhes: "Detalhes sobre Rezende.",
+                imagem: "rezende-3-215x230.png"
+            },
+            "yago": {
+                nome: "Yago",
+                detalhes: "Detalhes sobre Yago.",
+                imagem: "yago_-215x230.png"
+            },
+            "ademir": {
+                nome: "Ademir",
+                detalhes: "Detalhes sobre Ademir.",
+                imagem: "ademir-215x230.png"
+            },
+            "biel": {
+                nome: "Biel",
+                detalhes: "Detalhes sobre Biel.",
+                imagem: "biel-2-215x230.png"
+            },
+            "ratao": {
+                nome: "Rafael Ratão",
+                detalhes: "Detalhes sobre Rafael Ratão.",
+                imagem: "ratao-215x230.png"
+            },
+            "oscar": {
+                nome: "Oscar",
+                detalhes: "Detalhes sobre Oscar.",
+                imagem: "oscar-215x230.png"
+            },
+            "everaldo": {
+                nome: "Everaldo",
+                detalhes: "Detalhes sobre Everaldo.",
+                imagem: "everaldo-215x230.png"
+            }
+        };
+
+        function mostrarInformacoes(jogadorId) {
+            const jogador = jogadores[jogadorId];
+            if (jogador) {
+                document.getElementById("info-img").src = jogador.imagem;
+                document.getElementById("info-nome").textContent = jogador.nome;
+                document.getElementById("info-detalhes").textContent = jogador.detalhes;
+                document.getElementById("info-jogador").style.display = "block";
+                document.getElementById("overlay").style.display = "block";
+            }
+        }
+
+        function fecharInformacoes() {
+            document.getElementById("info-jogador").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</body>
+</html>

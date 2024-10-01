@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="pagina4.css">
+    <title>Associe-se</title>
+</head>
+<body>
+    <a href="pagina1.html" class="logo">
+        <img src="logo_marca.png" alt="Logo" width="130px">
+        </a>
+    
+    <div class="container">
+        <h3>Se Cadastre</h3>
+    
+         <div class="social-icons">
+            <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    
+        <label>Nome Completo: </label>
+            <input type="text" required> <br>
+        <label>Telefone:</label>
+            <input type="tel" required> <br>
+        <label>Email:</label>
+            <input type="email" required> <br>
+        <label>Senha:</label>
+            <input type="password" required> <br>
+        <label>CPF:</label>
+            <input type="text" name="cpf" id="cpf" maxlength="14" required> <br>
+        <label>Data de Nascimento</label>
+            <input type="date" required>
+    
+    
+    <div class="genero" required>
+    <input type="radio"> Feminino
+    <input type="radio"> Masculino
+    <input type="radio"> Outro
+    <input type="radio"> Não desejo informar
+    </div>
+    
+    
+    <div class="container" required>
+    <label>Rua</label>    
+        <input type="text"> <br>
+    <label>Bairro</label>
+        <input type="text"> <br>
+    <label>Número</label>
+        <input type="number"> <br>
+    <label>CEP</label> 
+        <input type="text"><br>
+    <label>Cidade</label>
+        <input type="text"> <br>
+
+        <select class="container
+        ">
+            <option value="0" disabled selected>Estado</option>
+                <option value="#">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+
+        </select>
+    </div>
+    
+    <select class="container" name="estado_civil" required>
+        <option value="0" disabled selected >Estado Civil </option>
+        <option value="solteira">Solteira(o)</option>
+        <option value="casada">Casada(o)</option>
+        <option value="Divorciada">Divorciada(o)</option>
+        <option value="viuva">Viuva(o)</option>
+    </select> <br>
+    
+    
+    <div>
+        <input class="foto" type="file">
+    </div>
+    
+    <button type="submit">Enviar</button>
+    <div class="sucess" id="formSucess"></div>
+    </div>
+
+
+
+</body>
+
+<script>
+
+
+    document.getElementById('cpf').addEventListener('input', function (e) {
+        let value = e.target.value;
+        value = value.replace(/\D/g, ''); // Remove tudo que não é dígito
+            value = value.replace(/(\d{3})(\d)/, '$1.$2'); // Coloca um ponto entre o terceiro e o quarto dígitos
+            value = value.replace(/(\d{3})(\d)/, '$1.$2'); // Coloca um ponto entre o sexto e o sétimo dígitos
+            value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2'); // Coloca um traço entre o nono e o décimo dígitos
+            e.target.value = value;
+        });
+</script>

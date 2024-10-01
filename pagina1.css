@@ -1,0 +1,94 @@
+/* pagina1.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ff0000; /* Vermelho */
+    padding: 10px;
+    text-align: center;
+}
+
+header a {
+    color: #fff; /* Branco */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+main {
+    padding: 20px;
+
+}
+
+.historia {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.historia h1 {
+    color: #080808;
+}
+
+.historia .paragrafo {
+    color: #0c0c0c;
+    line-height: 1.6;
+}
+
+#titulos {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#titulos h2 {
+    color: #080808;
+}
+
+#titulos h3, #titulos h4 {
+    color: #0a0a0a;
+}
+
+#titulos p {
+    color: #080808;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff0000; /* Vermelho */
+    color: #fff; /* Branco */
+    font-weight: bold;
+}
+
+footer .info{
+        color: #f4f4f4; /* Cor desejada para os links */
+        text-decoration: none;
+        ; /* Remove o sublinhado padrão */
+    }
+    
+    footer a:hover {
+        text-decoration: none; /* Adiciona sublinhado ao passar o mouse */
+    }
+    
+footer a{
+    color: #f4f4f4;
+    
+}
