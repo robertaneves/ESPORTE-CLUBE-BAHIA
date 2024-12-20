@@ -1,6 +1,7 @@
 # Meu Site do Bahia ⚽️
 
-Bem-vindo ao site dedicado ao Esporte Clube Bahia! Aqui você encontra informações, notícias e curiosidades sobre o clube.
+Bem-vindo ao site dedicado ao Esporte Clube Bahia! <br>
+Aqui você encontra informações, notícias e curiosidades sobre o clube.
 
 ## Visual do Site 🌟
 ![História e Titulos (Pagina 1)](https://github.com/user-attachments/assets/1777e36d-c7a4-4592-a031-8b4b38a2daff)
